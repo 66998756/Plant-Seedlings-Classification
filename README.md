@@ -2,10 +2,10 @@
 
 PyTorch implementation Plant-Seedlings-Classification[^1] task.<br>
 Highest score on Kaggle is `0.95843` using ResNeXt-101 (64x4d)[^2]<br>
-To see the detail about model and training, check **Training**<br>
+To see the details about the model and training, check **Training**<br>
 
 ## SetUp
-To see environment setup, see `requirements.txt`.<br>
+To see the environment setup, see `requirements.txt`.<br>
 Training on GTX 1080Ti with CUDA version 11.4
 
 ## Training
@@ -23,7 +23,8 @@ You can see the all training history and model detail in `./figure/log_<id>.txt`
 ## Demonstrate
 use following commend to demo the test dataset:<br>
 `python demo.py --id<model_id> --epoch<default_110> --img_resize<make_sure_same_with_training> --device<your_GPU_number>`<br>
-`output_<id>.csv` will be create after commend running sussesful.
+`output_<id>.csv` will be create after commend running sussesful.<br>
+The model will be saved by the form `model_<id>_<epoch>.pt`.
 
 [^1]: Giselsson, T.M., Jørgensen, R.N., Jensen, P.K., Dyrmann, M., & Midtiby, H.S. (2017). "A Public Image Database for Benchmark of Plant Seedling Classification Algorithms," ArXiv, abs/1711.05458.
 [^2]: S. Xie, R. Girshick, P. Dollár, Z. Tu and K. He, "Aggregated Residual Transformations for Deep Neural Networks," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 5987-5995
