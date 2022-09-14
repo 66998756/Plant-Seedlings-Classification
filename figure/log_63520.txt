@@ -1,0 +1,17 @@
+start time: Tue Sep 13 18:05:20 2022
+===== model config =====
+id: 63520
+input_img_resize: 96
+epochs: 201
+lr: 0.001
+batch_size: 8
+num_blocks: [3, 4, 23, 3]
+cardinality: 64
+bottleneck_width: 4
+***** remove background *****
+========================
+eopch, train loss, train acc, test loss, test acc
+0, 2.2184, 0.3494, 3.4152, 0.3179
+1, 1.4347, 0.5441, 1.189, 0.6006
+2, 1.1103, 0.6402, 0.9743, 0.7145
+3, 0.9932, 0.6807, 0.6722, 0.7609
